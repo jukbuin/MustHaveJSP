@@ -100,4 +100,13 @@
 		<servlet-name>MVCBoardList</servlet-name> <!-- 서블릿 이름 -->
 		<url-pattern>/mvcboard/list.do</url-pattern> <!-- 요청명 -->
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MVCBoardWrite</servlet-name>
+		<servlet-class>model2.mvcboard.WriteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MVCBoardWrite</servlet-name>
+		<url-pattern>/mvcboard/write.do</url-pattern>
+	</servlet-mapping>
 </web-app>
