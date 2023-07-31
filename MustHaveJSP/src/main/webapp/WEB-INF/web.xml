@@ -109,4 +109,9 @@
 		<servlet-name>MVCBoardWrite</servlet-name>
 		<url-pattern>/mvcboard/write.do</url-pattern>
 	</servlet-mapping>
+	
+	<context-param>
+		<param-name>maxPostSize</param-name>
+		<param-value>1024000</param-value>
+	</context-param>
 </web-app>

@@ -80,8 +80,8 @@ public class MVCBoardDAO extends DBConnPool{
 		int result = 0;
 
 		try {
-			String query = "INSERT INTO mvcboard (" + "idx, name, title, content, ofile, sfile, pass) " + " VALUES ( "
-					+ "seq_board_num.NEXTVAL, ?, ?, ?, ?, ?, ?)";
+			String query = "INSERT INTO mvcboard ( " + " idx, name, title, content, ofile, sfile, pass) " + " VALUES ( "
+					+ "seq_board_num.NEXTVAL,?,?,?,?,?,?)";
 			psmt = con.prepareStatement(query);
 			psmt.setString(1, dto.getName());
 			psmt.setString(2, dto.getTitle());
